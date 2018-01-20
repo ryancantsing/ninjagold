@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div id ="wrapper">
+<div id = "GoldTotal"> {{ gold_total }}</div>
+
+<div id = "locations">
+  <div class = "location" id="farm" >
+    <h4>Farm </h4>
+    <p>Earns 2-5 Gold</p>
+    <button (click)="onButtonFarm()">Farm!</button>
+  </div>
+  <div class = "location" id="cave">
+    <h4>Cave</h4>
+    <p>Earns 5-10 gold</p>
+    <button (click)="onButtonCave()">Cave!</button>
+
+  </div>
+  <div class = "location" id="house">
+    <h4>House</h4>
+    <p>Earns 7-15 gold</p>
+    <button (click)="onButtonHouse()">House!</button>
+
+  </div>
+  <div class = "location" id="casino">
+    <h4>Casino</h4>
+    <p>Earn or Lose up to 100 gold</p>
+    <button (click)="onButtonCasino()">Casino!</button>
+
+  </div>
+
+</div>
+<div id = "adventureLog"><h3>Adventure Log</h3>
+    <ul *ngFor="let str of activity">
+      <li>{{str}}</li>
+    </ul>
+</div>
+</div>
+
+
